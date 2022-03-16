@@ -1,7 +1,8 @@
 name: TagToRelease
 on:
-  push
-  
+  push:
+    tags:
+      - 'v*'
 jobs:
   build:
     name: Process
